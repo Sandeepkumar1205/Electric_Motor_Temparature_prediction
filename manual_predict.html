@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manual Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Manual Motor Input</h2>
+
+  <form action="/predict" method="post">
+
+    <input type="number" step="any" name="ambient" placeholder="Ambient Temperature" required>
+
+    <input type="number" step="any" name="coolant" placeholder="Coolant Temperature" required>
+
+    <input type="number" step="any" name="u_d" placeholder="Voltage d-axis" required>
+
+    <input type="number" step="any" name="u_q" placeholder="Voltage q-axis" required>
+
+    <input type="number" step="any" name="motor_speed" placeholder="Motor Speed" required>
+
+    <input type="number" step="any" name="i_d" placeholder="Current d-axis" required>
+
+    <input type="number" step="any" name="i_q" placeholder="Current q-axis" required>
+
+    <input type="number" step="any" name="stator_yoke" placeholder="Stator Yoke Temp" required>
+
+    <input type="number" step="any" name="stator_winding" placeholder="Stator Winding Temp" required>
+
+    <button type="submit">Predict</button>
+</form>
+
+    {% if prediction_text %}
+    <div class="result">{{ prediction_text }}</div>
+    {% endif %}
+</div>
+</body>
+</html>
