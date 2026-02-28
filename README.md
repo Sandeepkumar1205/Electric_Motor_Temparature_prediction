@@ -1,7 +1,7 @@
 # Electric_Motor_Temparature_prediction
 
 Electric Motor Temperature Prediction using Machine Learning
-📌 Project Overview
+Project Overview
 Electric motors are widely used in industrial applications, and overheating can lead to performance degradation, equipment failure, and increased maintenance cost.
 This project uses Machine Learning techniques to predict the rotor temperature of an electric motor based on historical sensor data such as voltage, current, motor speed, and stator temperatures.
 
