@@ -1,4 +1,4 @@
-# Electric_Motor_Temparature_prediction
+# Electric_Motor_Temparature_prediction_ML
 
 Electric Motor Temperature Prediction using Machine Learning
 Project Overview
